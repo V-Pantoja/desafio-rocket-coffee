@@ -1,0 +1,69 @@
+:root {
+   --backgrond: #000;
+   --text-color: #FFF;
+   --button: #8257E5;
+   --border: #29292E;
+   --border-menu-mobile: #A8A8B3;
+   --text-color-menu-mobile: #E1E1E6;
+
+   font-size: 62.5%;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   height: 100vh;
+
+   font-family: 'Manrope', sans-serif;
+   font-size: 1.4rem;
+}
+
+#container {
+   background-color: var(--backgrond);
+   color: var(--text-color);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header {
+   margin: 5rem;
+   font-weight: 400;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header img {
+   margin-right: 12rem;
+}
+
+header a {
+   color: var(--text-color);
+   margin: 1rem;
+
+   text-decoration: none;
+}
+
+header button {
+   margin-left: 10rem;
+}
+
+h1 {
+   font-size: 7rem;
+
+   text-align: center;
+}
+
+h1#title-modified {
+   text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+
+   color: var(--backgrond);
+}
