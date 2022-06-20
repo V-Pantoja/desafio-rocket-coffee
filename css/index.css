@@ -1,7 +1,7 @@
 :root {
    --backgrond: #000;
    --text-color: #FFF;
-   --button: #8257E5;
+   --purple: #8257E5;
    --border: #29292E;
    --border-menu-mobile: #A8A8B3;
    --text-color-menu-mobile: #E1E1E6;
@@ -16,15 +16,17 @@
 }
 
 body {
+   background-color: var(--backgrond);
+   color: var(--text-color);
    height: 100vh;
 
    font-family: 'Manrope', sans-serif;
    font-size: 1.4rem;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 #container {
-   background-color: var(--backgrond);
-   color: var(--text-color);
+   height: 100vh;
 
    display: flex;
    flex-direction: column;
@@ -32,38 +34,67 @@ body {
    justify-content: space-between;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 header {
-   margin: 5rem;
+   margin-top: 5rem;
+
    font-weight: 400;
 
    display: flex;
    align-items: center;
-   justify-content: space-between;
 }
 
-header img {
-   margin-right: 12rem;
+header #logo-menu {
+   margin-right: 15rem;
 }
 
 header a {
    color: var(--text-color);
-   margin: 1rem;
+   margin: auto 2rem;
+
+   letter-spacing: 0.02em;
 
    text-decoration: none;
 }
 
 header button {
-   margin-left: 10rem;
+   background-color: transparent;
+   color: var(--text-color);
+
+   width: 200px;
+   padding: 1rem;
+   margin-left: 15rem;
+
+   font-size: 1.4rem;
+
+   border: 1px solid #8257E5;
+   border-radius: 6px;  
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#container div {
+   width: 90rem;
 }
 
 h1 {
-   font-size: 7rem;
+   font-size: 8rem;
+   letter-spacing: -0.03em;
 
    text-align: center;
 }
 
-h1#title-modified {
-   text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
-
+h1#txt-modified {
    color: var(--backgrond);
+
+   font-size: 8rem;
+   letter-spacing: -0.03em;
+
+   text-shadow: -1px -1px 0 var(--purple), 1px -1px 0 var(--purple), -1px 1px 0 var(--purple), 1px 1px 0 var(--purple);
 }
+
+img#copo-coffee {
+   width: 100%;
+   height: 51rem;
+}
+
+/* CENTRALIZANDO O HEADER COM A DIV */
