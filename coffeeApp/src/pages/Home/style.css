@@ -16,55 +16,87 @@ body {
 
   font-family: "Manrope", sans-serif;
   font-size: 1.4rem;
-
-  display: grid;
-  
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 #container {
   height: 100vh;
 
+  display: grid;
+  grid-template-areas: 
+    "leftAside header rigthAside"
+    "undefined1 main undefined2";
+
+  grid-template-rows: 10rem 1fr;
+  grid-template-columns: 25% 50% 25%;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#leftAside {
+  grid-area: leftAside;
+  
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+#logoMenu {
+  width: 4.5rem;
+  height: 5rem;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 header {
-  margin-top: 5rem;
-
+  grid-area: header;
   font-weight: 400;
 
+  margin: auto;
 }
 
-header #logo-menu {
-  margin-right: 15rem;
-}
-
-header a {
+nav a {
   color: var(--text-color);
-  margin: auto 2rem;
+
+  margin: 0 2rem;
 
   letter-spacing: 0.02em;
-
   text-decoration: none;
 }
 
-header button {
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#rigthAside {
+  grid-area: rigthAside;
+
+  display: flex;
+  align-items: center;
+}
+
+#rigthAside button {
   background-color: transparent;
   color: var(--text-color);
 
-  width: 200px;
-  padding: 1rem;
-  margin-left: 15rem;
+  padding: 1rem 4rem;
 
   font-size: 1.4rem;
 
-  border: 1px solid #8257e5;
+  border: 1px solid var(--purple);
   border-radius: 6px;
+
+  transition: 0.2s;
+}
+#rigthAside button:hover {
+  background-color: var(--purple);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-#container div {
-  width: 90rem;
+main {
+  grid-area: main;
+
+  padding-top: 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
@@ -74,18 +106,16 @@ h1 {
   text-align: center;
 }
 
-h1#txt-modified {
+h2#txt-modified {
   color: var(--backgrond);
 
   font-size: 8rem;
   letter-spacing: -0.03em;
 
+  text-align: center;
   text-shadow: -1px -1px 0 var(--purple), 1px -1px 0 var(--purple), -1px 1px 0 var(--purple), 1px 1px 0 var(--purple);
 }
 
 img#copo-coffee {
-  width: 100%;
   height: 51rem;
 }
-
-/* CENTRALIZANDO O HEADER COM A DIV */

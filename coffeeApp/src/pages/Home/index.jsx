@@ -8,8 +8,8 @@ export function Home() {
 	return(
 		<div id="container">
 
-			<aside>
-				<img id="logo-menu" src={logoDesktop} alt="Logo RocketSeat" />
+			<aside id="leftAside">
+				<img id="logoMenu" src={logoDesktop} alt="Logo RocketSeat" />
 			</aside>
 
 			<header>
@@ -22,16 +22,18 @@ export function Home() {
 				</nav>
 			</header>
 
-			<aside>
+			<aside id="rigthAside">
 				<button>PEGAR MEU CAFÉ</button>
 			</aside>
 		
-			<div>
-				<h1>Great Coffee</h1>
-				<h1 id="txt-modified">&lt; Great Code/ &gt;</h1>
+			<main>
+				<div>
+					<h1>Great Coffee</h1>
+					<h2 id="txt-modified">&lt; Great Code/ &gt;</h2>
+				</div>
 			
 				<img id="copo-coffee" src={cupCoffee} alt="Rocket Coffee" />
-			</div>
+			</main>
 		</div>
 	)
 }
