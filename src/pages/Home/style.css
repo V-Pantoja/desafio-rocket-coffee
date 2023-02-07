@@ -25,10 +25,27 @@ body {
   display: grid;
   grid-template-areas: 
     "leftAside header rigthAside"
-    "undefined1 main undefined2";
-
-  grid-template-rows: 10rem 1fr;
+    "undefined1 main undefined2"
+  ;
   grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 10rem 1fr;
+  
+}
+
+#container img#blur1 {
+  position: absolute;
+
+  bottom: 0px;
+
+  z-index: -9999;
+}
+
+#container img#blur2 {
+  position: absolute;
+
+  right: 0px;
+
+  z-index: -9999;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
